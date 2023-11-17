@@ -1,5 +1,4 @@
 {:paths   ["src"]
- :deps    {euclidean             {:mvn/version "0.2.0"}
-           org.clojure/tools.cli {:mvn/version "1.0.219"}}
+ :deps    {euclidean {:mvn/version "0.2.0"}}
  :aliases {:dev  {:extra-paths ["dev"]}
            :test {:extra-paths ["test"]}}}

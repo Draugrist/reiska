@@ -62,8 +62,6 @@
   (pp/pprint scene)
   (println "Printing to" outfile)
   (let [{:keys [center fov direction up]} (:camera scene)
-        _ (println center)
-        _ (println direction)
         hw-ratio      (/ height width)
         fov-radians   (/ (* Math/PI 0.5 fov) 180.0)
         half-width    (Math/tan fov-radians)
