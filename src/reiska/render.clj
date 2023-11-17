@@ -29,7 +29,7 @@
 (defn get-closest-hit [origin ray-dir objects]
   (first (sort-by :point (filter some? (map (partial intercept-sphere origin ray-dir) objects)))))
 
-(defn foo [hit-object point-of-hit normal-hit objects surface-color light]
+(defn object->light [hit-object point-of-hit normal-hit objects surface-color light]
   (let [light-direction (v/normalize (v/sub (:center light) point-of-hit))
         other-objects   (remove #(= % light) objects)
         origin          (v/add point-of-hit (v/scale normal-hit bias))
@@ -52,7 +52,7 @@
             inside       (> (v/dot ray-dir normal-hit) 0)
             normal-hit   (if inside (v/sub normal-hit) normal-hit)]
         ;TODO transparent or reflective object
-        (let [surface (reduce (partial foo sphere point-of-hit normal-hit (:objects scene)) (v/vector 0 0 0) (:lights scene))]
+        (let [surface (reduce (partial object->light sphere point-of-hit normal-hit (:objects scene)) (v/vector 0 0 0) (:lights scene))]
           (if (:emission sphere)
             (v/add (:emission sphere) surface)
             surface)))
