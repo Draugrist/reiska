@@ -1,0 +1,29 @@
+{:name       "scene-simple"
+ :background #math/vector [1 1 1]
+ :camera
+ {:center    #math/vector [-10 0 0]
+  :fov       45
+  :direction #math/vector [1 0 0]}
+ :objects
+ [{:center       #math/vector [0 0 0]
+   :radius       1
+   :color        #math/vector [1 0 0]
+   :reflectivity 0
+   :transparency 0}
+  {:center       #math/vector [1 1 1]
+   :radius       1
+   :color        #math/vector [0 1 0]
+   :reflectivity 0
+   :transparency 0}
+  {:center       #math/vector [-1 -1 -1]
+   :radius       1
+   :color        #math/vector [0 0 1]
+   :reflectivity 0
+   :transparency 0}
+  {:center       #math/vector [0 0 10]
+   :radius       1
+   :color        #math/vector [1.0 1.0 1.0]
+   :reflectivity 0
+   :transparency 0
+   :emission     #math/vector [3 3 3]}
+  ]}

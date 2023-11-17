@@ -1,0 +1,41 @@
+{:name       "scene1"
+ :background #math/vector [0.2 0.7 0.8]
+ :camera
+ {:center    #math/vector [0 0 5]
+  :fov       30
+  :direction #math/vector [0 0 -1]
+  :up        #math/vector [0 1 0]
+  }
+ :objects
+ [{:center       #math/vector [0 -10004 0]
+   :radius       10000
+   :color        #math/vector [0.2 0.2 0.2]
+   :reflectivity 0
+   :transparency 0}
+  {:center       #math/vector [0 0 -20]
+   :radius       4
+   :color        #math/vector [1 0.32 0.36]
+   :reflectivity 1
+   :transparency 0.5}
+  {:center       #math/vector [5 -1 -15]
+   :radius       2
+   :color        #math/vector [0.9 0.76 0.46]
+   :reflectivity 1
+   :transparency 0}
+  {:center       #math/vector [5 0 -25]
+   :radius       3
+   :color        #math/vector [0.65 0.77 0.97]
+   :reflectivity 1
+   :transparency 0}
+  {:center       #math/vector [-5.5 0 -15]
+   :radius       3
+   :color        #math/vector [0.9 0.9 0.9]
+   :reflectivity 1
+   :transparency 0}
+  {:center       #math/vector [0 20 -30]
+   :radius       3
+   :color        #math/vector [0.0 0.0 0.0]
+   :reflectivity 0
+   :transparency 0
+   :emission     #math/vector [3 3 3]}
+  ]}
