@@ -11,7 +11,7 @@
    :reflectivity 0
    :transparency 0}
   {:center       #math/vector [-4 2 -1]
-   :radius       0.2
+   :radius       0.4
    :color        #math/vector [0.6 0.6 0.6]
    :reflectivity 0
    :transparency 0}
@@ -20,10 +20,10 @@
    :color        #math/vector [1 1 1]
    :reflectivity 0
    :transparency 0}
-  {:center       #math/vector [-30 -10 20]
+  {:center       #math/vector [-30 -5 20]
    :radius       1
    :color        #math/vector [0.0 0.0 0.0]
    :reflectivity 0
    :transparency 0
-   :emission     #math/vector [3 3 3]}
+   :emission     #math/vector [2 2 2]}
   ]}
