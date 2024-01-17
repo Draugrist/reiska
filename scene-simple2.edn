@@ -20,7 +20,7 @@
    :color        #math/vector [0 0 1]
    :reflectivity 0
    :transparency 0}
-  {:center       #math/vector [0 0 10]
+  {:center       #math/vector [0 0 20]
    :radius       1
    :color        #math/vector [1.0 1.0 1.0]
    :reflectivity 0

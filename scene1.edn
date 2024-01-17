@@ -38,4 +38,10 @@
    :reflectivity 0
    :transparency 0
    :emission     #math/vector [3 3 3]}
+  {:center       #math/vector [0 0 -30]
+   :radius       3
+   :color        #math/vector [0.0 0.0 0.0]
+   :reflectivity 0
+   :transparency 0
+   :emission     #math/vector [3 3 3]}
   ]}
